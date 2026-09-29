@@ -1,0 +1,103 @@
+/* 上传卡片样式 */
+
+.upload-card.empty .upload-drop {
+  padding: var(--space-5) var(--space-3);
+}
+
+.upload-card.compact .upload-drop {
+  padding: var(--space-3);
+}
+
+.upload-drop {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  text-align: center;
+  border: 2px dashed var(--color-border-strong);
+  border-radius: var(--radius-lg);
+  background: var(--color-bg);
+  cursor: pointer;
+  transition: border-color var(--transition-base), background var(--transition-base),
+    transform var(--transition-base);
+}
+
+.upload-drop:hover {
+  border-color: var(--color-primary);
+  background: var(--color-primary-soft);
+}
+
+.upload-card.dragging .upload-drop {
+  border-color: var(--color-primary);
+  background: var(--color-primary-soft);
+  transform: scale(1.01);
+}
+
+.upload-illustration {
+  display: inline-flex;
+  color: var(--color-primary);
+  margin-bottom: 4px;
+  transition: transform var(--transition-base);
+}
+
+.upload-card.dragging .upload-illustration {
+  transform: scale(1.05);
+}
+
+.upload-main {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.upload-sub {
+  font-size: 13px;
+  color: var(--color-text-2);
+}
+
+.upload-hint {
+  font-size: 12px;
+  color: var(--color-text-3);
+  margin-top: 4px;
+}
+
+.upload-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-1);
+  color: var(--color-text-2);
+  font-size: 13px;
+  padding: var(--space-2);
+}
+
+/* 错误边界兜底界面 */
+.error-boundary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-5) var(--space-3);
+  margin: var(--space-5) auto;
+  max-width: 420px;
+  text-align: center;
+  color: var(--color-danger);
+}
+
+.error-boundary h2 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.error-boundary p {
+  font-size: 13px;
+  color: var(--color-text-2);
+  word-break: break-word;
+}
+
+.error-boundary .btn {
+  margin-top: var(--space-1);
+}

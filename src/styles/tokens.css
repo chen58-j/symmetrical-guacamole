@@ -1,0 +1,40 @@
+/* 设计令牌：全局 CSS 变量（温暖手工风格主题） */
+:root {
+  /* 主色：珊瑚橙渐变 */
+  --color-primary: #ff7a59;
+  --color-primary-2: #ff9f45;
+  --color-primary-grad: linear-gradient(135deg, #ff7a59 0%, #ff9f45 100%);
+  --color-primary-soft: #fff1ea;
+  /* 辅助色 */
+  --color-info: #4c9aff;
+  --color-success: #34c77b;
+  --color-warning: #ffb020;
+  --color-danger: #ff4d5e;
+  /* 背景与表面 */
+  --color-bg: #f7f4ef;
+  --color-surface: #ffffff;
+  --color-text: #2b2723;
+  --color-text-2: #6e675e;
+  --color-text-3: #a39b8f;
+  --color-border: #ede7dd;
+  --color-border-strong: #d8d0c4;
+  /* 圆角 */
+  --radius-sm: 8px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  /* 阴影 */
+  --shadow-card: 0 2px 8px rgba(31, 26, 20, 0.06), 0 12px 32px rgba(31, 26, 20, 0.08);
+  --shadow-hover: 0 4px 12px rgba(31, 26, 20, 0.08), 0 16px 40px rgba(31, 26, 20, 0.12);
+  /* 字体 */
+  --font-family: 'PingFang SC', 'Microsoft YaHei', 'Noto Sans SC', system-ui, sans-serif;
+  /* 间距（8px 基准网格） */
+  --space-1: 8px;
+  --space-2: 12px;
+  --space-3: 16px;
+  --space-4: 24px;
+  --space-5: 32px;
+  /* 过渡动效 */
+  --transition-fast: 150ms ease;
+  --transition-base: 200ms ease;
+  --transition-slow: 250ms ease;
+}
